@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+     let x = 5;
+    let y = 6;
+    let z = 7;
+    let result = x++ + --y + z++ - --x - ++z +  y++;
+    alert(result);
+    // Bước 1: Tính x++.
+    //
+    // x ban đầu là 5.
+    // x sử dụng giá trị hiện tại của x(5) trong biểu thức, sau đó tăng x lên một đơn vị.
+    //     Kết quả: x++ trả về 5, và x tăng lên là 6.
+    // Bước 2: Tính --y.
+    //
+    //    y ban đầu là 6.
+    //--y giảm giá trị của y đi một đơn vị trước khi sử dụng trong biểu thức.
+    //  Kết quả: --y trả về 5, và y giảm xuống là 5.
+    // Bước 3: Tính z++.
+    //
+    // z ban đầu là 7.
+    // z++ sử dụng giá trị hiện tại của z (7) trong biểu thức, sau đó tăng z lên một đơn vị.
+    //   Kết quả: z++ trả về 7, và z tăng lên thành 8.
+    // Bước 4: Tính --x;
+    //
+    // x đã được tăng lên ở bước 1, nên bây giờ bằng 6;
+    // --x giảm giá trị của x xuống một đơn vị trước khi sử dụng trong biểu thức;
+    //  Kết quả: --x trả về 5, và x giảm xuống thành 5.
+    // Bước 5: Tính ++z.
+    //
+    // z đã tăng lên ở bước 3. Nên bây giờ z bằng 8.
+    // ++z đã tăng lên một đơn vị khi được sử dụng trong biểu thức.
+    //  Kết quả: ++z thành 9, và z tăng lên thành 9.
+    // Bước 6: Tính y++.
+    //
+    // y đã được giảm xuống ở bước 2, nên bây giờ y được giảm xuống còn 5.
+    // y++ sử dụng giá trị hiện tại của y là (5) trong biểu thức, sau đó tăng y lên 1 đơn vị.
+    // Kết quả: y++ trả về 5, và y tăng lên thành 6.
+    // Tính tổng kết quả của các phân tử trong biểu thức:
+    //
+    // x++:5
+    // --y:5
+    // ++z:7
+    // --x:5
+    // ++z:9
+    // y++:5
+    // Let result = 5+5+7-5-9+5 = 8
+</script>
+</body>
+</html>
